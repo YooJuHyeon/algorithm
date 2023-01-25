@@ -1,3 +1,3 @@
-T = int(input()) 
+N = int(input())
 numbers = list(map(int,input()))
 print(sum(numbers))
