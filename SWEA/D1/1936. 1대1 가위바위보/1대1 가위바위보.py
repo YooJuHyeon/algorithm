@@ -1,17 +1,6 @@
 A, B = list(map(int, input().split()))
 
-if A == 1:
-    if B == 2:
-        print('B')
-    elif B == 3:
-        print('A')
-if A == 2:
-    if B == 1:
-        print('A')
-    elif B == 3:
-        print('B')
-if A == 3:
-    if B == 1:
-        print('B')
-    elif B == 2:
-        print('A')
+if (A == 1 and B == 3) or (A == 2 and B == 1) or (A == 3 and B == 2):
+    print('A')
+else:
+    print('B')
