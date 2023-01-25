@@ -1,9 +1,4 @@
-number = int(input())
-total = 0
-
-while number > 0:
-    n = number % 10
-    total += n
-    number = number // 10
-
-print(total)    
+number = list(input())
+number = list(map(int, number))
+sum_number = sum(number)
+print(sum_number)
