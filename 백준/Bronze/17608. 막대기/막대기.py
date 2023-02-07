@@ -3,18 +3,18 @@ input = sys.stdin.readline
 
 N = int(input())
 stack = []
-cnt = 1
+cnt = 1                      # 마지막 막대기의 값은 1로 카운트 해놓기
 
 for _ in range(N):
     number = int(input())
     stack.append(number)
 
-last = stack.pop()
+high = stack.pop()
 for i in range(N-1):
-    high = stack.pop()
+    last = stack.pop()
 
-    if high > last:
+    if last > high:
         cnt +=1
-        last = high
+        high = last
         
 print(cnt)
